@@ -1,0 +1,309 @@
+.modal {
+  display: none;
+  position: relative;
+}
+
+.modal__close,
+.modal__close:after {
+  height: 1px;
+  width: 16px;
+  position: absolute;
+  z-index: 10;
+  background-color: $black-dark-color;
+  transform: rotate(45deg);
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
+
+.modal__close:after {
+  content: '';
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+.modal.active {
+  width: 856px;
+  height: 428px;
+  display: flex;
+  background-color: $white-color;
+  border-radius: 8px;
+}
+
+@media (max-width: 880px) {
+  .modal.active {
+    width: 428px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal.active {
+    width: 320px;
+  }
+}
+
+.modal__sent {
+  display: none;
+}
+
+.modal__sent.active {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__img-wrapper {
+  width: 96px;
+  height: 96px;
+  background-color: $green-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.modal__header {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .modal__header {
+    font-size: 30px;
+  }
+}
+
+.modal__data {
+  display: none;
+}
+
+.modal__data.active {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__header {
+  font-family: 'Ubuntu-Bold', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.modal__desc {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: $grey-dark-color;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  .modal__desc {
+    font-size: 14px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form__input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 17px 12px;
+  border: 1px solid $grey-light-color;
+}
+
+.form__input_error {
+  border-color: $red-color;
+}
+
+.phone-mask-error,
+.form__error {
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  color: $red-color;
+  font-family: 'Ubuntu-Regular', sans-serif;
+}
+
+.form__button {
+  margin-top: 8px;
+  background-color: $purple-light-color;
+  width: 380px;
+  height: 58px;
+  border: none;
+  border-radius: 4px;
+  color: $white-color;
+  cursor: pointer;
+}
+
+.form__button.active {
+  background-color: $purple-color;
+}
+
+.modal__img img {
+  width: 428px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (max-width: 880px) {
+  .modal__img {
+    display: none;
+  }
+}
+
+// cardModal
+.cardModal {
+  display: none;
+}
+
+.cardModal.active {
+  position: relative;
+  width: 856px;
+  height: 428px;
+  display: flex;
+  border-radius: 8px;
+}
+
+@media (max-width: 475px) {
+  .cardModal.active {
+    width: 350px;
+  }
+}
+
+.cardModal__close,
+.cardModal__close:after {
+  content: '';
+  height: 1px;
+  width: 16px;
+  position: absolute;
+  z-index: 10;
+  background-color: $black-dark-color;
+  transform: rotate(45deg);
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 880px) {
+  .cardModal__close,
+  .cardModal__close:after {
+    // right: 405px;
+  }
+}
+
+.cardModal__close:after {
+  content: '';
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+.product {
+  display: flex;
+  background-color: $white-color;
+  border-radius: 8px;
+}
+
+@media (max-width: 880px) {
+  .product {
+    width: 428px;
+    flex-direction: column;
+  }
+
+  .cardModal.active {
+    flex-direction: column;
+  }
+
+  .product__img img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 8px;
+  }
+}
+
+@media (max-width: 475px) {
+  .product {
+    width: 350px;
+  }
+
+  .product__img img {
+    width: 350px;
+  }
+}
+
+.product__img img {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.product__img-slider {
+}
+
+.product__data {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.product__header {
+  font-size: 24px;
+}
+
+.product__old-price {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 16px;
+  color: $grey-light-color;
+  text-decoration: line-through;
+}
+
+.product__price {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.product__desc_name {
+  font-size: 16px;
+}
+
+.product__desc_value {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 16px;
+  color: $grey-light-color;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail__name {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 14px;
+  color: $grey-light-color;
+}
+
+.detail__value {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 14px;
+  color: $black-dark-color;
+}

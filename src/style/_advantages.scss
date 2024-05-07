@@ -1,0 +1,152 @@
+.advantages__grid {
+  margin-top: 46px;
+  padding: 0 66px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1268px) {
+  .advantages__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 2fr);
+    align-items: center;
+  }
+
+  .item:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 940px) {
+  .advantages__grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+#advantages-video {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: grid;
+  width: 100%;
+}
+
+.item {
+  border-radius: 8px;
+  background-color: $grey-color;
+  padding: 24px;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  cursor: pointer;
+  height: 248px;
+  width: 420px;
+  margin: 0 20px;
+  transition: $transition-variable;
+
+  &:hover {
+    background-color: $purple-color;
+
+    .item__header {
+      display: none;
+    }
+
+    .item__subheader {
+      display: none;
+    }
+
+    .item_purple .item__subheader {
+      display: flex;
+    }
+
+    .item__description {
+      display: flex;
+      font-family: 'Uuntu-Regular', sans-serif;
+      color: $white-color;
+    }
+  }
+}
+
+.item__header {
+  font-size: 56px;
+  margin-bottom: 4px;
+}
+
+.item__subheader {
+  font-size: 24px;
+}
+
+.item_purple h4 {
+  font-size: 24px;
+  color: $white-color;
+}
+
+@media (max-width: 940px) {
+  .item_purple {
+    width: 100%;
+  }
+}
+
+.item__description {
+  display: none;
+}
+
+.item__img {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex: 1 1 auto;
+}
+
+.item__img-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $purple-light-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__img-wrapper img {
+  width: 20px;
+}
+
+.item_purple .item__img img {
+  width: 36px;
+}
+
+.arrow {
+  transition: $transition-variable;
+}
+
+.item_purple {
+  background-color: $purple-color;
+  transition: $transition-variable;
+
+  &:hover {
+    background-color: $purple-color-hover;
+
+    .arrow {
+      width: 50px;
+    }
+  }
+}
+
+.item_purple .item__subheader {
+  color: $white-color;
+}
+
+#advantages-video {
+  display: flex;
+  justify-content: center;
+}
+
+#advantages-video video {
+  width: 416px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 8px;
+}

@@ -1,0 +1,150 @@
+.catalog {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.catalog__desc {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 16px;
+  color: $grey-light-color;
+  margin-top: 16px;
+  // width: 840px;
+}
+
+// @media (max-width: 800px) {
+//   .catalog__desc {
+//     width: 600px;
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   .catalog__desc {
+//     width: 370px;
+//   }
+// }
+
+.card__old-price {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 16px;
+  color: $grey-light-color;
+  text-decoration: line-through;
+}
+
+.card__price {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.card__price span {
+  color: $red-color;
+  font-size: 16px;
+  font-family: 'Ubuntu-Regular', sans-serif;
+  margin-bottom: 4px;
+}
+
+.card__details {
+  cursor: pointer;
+}
+
+// bootstrao classes
+.col-6 {
+  
+}
+
+.card {
+  padding: 0;
+  width: 16em;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 14em;
+    height: 24em;
+  }
+}
+
+@media (max-width: 650px) {
+  .container-fluid {
+    
+  }
+
+  .col-6 {
+
+  }
+
+  .card {
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    
+  }
+}
+
+.card__img-container {
+  height: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .card__img-container {
+    width: 12em;
+  }
+}
+
+@media (max-width: 500px) {
+  .card__img-container {
+    
+  }
+}
+
+.card-body {
+  background-color: $grey-color;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0;
+}
+
+.card-text {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-align: start;
+}
+
+.card-img-top {
+  transition: $transition-variable;
+  padding: 0;
+  width: 12em;
+}
+
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  .card-img-top {
+    width: 10em;
+  }
+}
+
+@media (max-width: 650px) {
+  .card-img-top {
+    
+  }
+}
+
+@media (max-width: 500px) {
+  .card-img-top {
+   
+  }
+}

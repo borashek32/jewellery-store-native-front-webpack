@@ -1,0 +1,142 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__main {
+  display: flex;
+  gap: 48px;
+  padding: 96px 0;
+}
+
+@media (max-width: 1439px) {
+  .footer__main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: $purple-color;
+  width: 416px;
+}
+
+@media (max-width: 1439px) {
+  .contacts {
+    width: 832px;
+  }
+}
+
+@media (max-width: 940px) {
+  .contacts {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 690px) {
+  .contacts {
+    width: 351px;
+  }
+}
+
+.contacts__header {
+  color: $white-color;
+  font-size: 58px;
+  font-family: 'Ubuntu-Bold', sans-serif;
+  margin-bottom: 30px;
+}
+
+.contacts__data {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  // width: 100%;
+}
+
+.contacts__img {
+  width: 16px;
+  height: 16px;
+}
+
+.contacts__img-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $purple-light-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__name {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  color: $white-light-color;
+}
+
+.contacts__name,
+.contacts__value {
+  color: $white-color;
+}
+
+.contacts__data:last-child {
+  font-family: 'Ubuntu-Regular', sans-serif;
+}
+
+.footer__footer {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  margin-top: 16px;
+  margin-bottom: 96px;
+}
+
+.footer__footer p {
+  text-align: center;
+}
+
+.footer__map {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__map-wrapper {
+  width: 832px;
+  height: 600px;
+  border-radius: 8px;
+}
+
+.footer__map-wrapper iframe {
+  width: 832px;
+  height: 600px;
+  border-radius: 8px;
+}
+
+@media (max-width: 940px) {
+  .footer__map-wrapper {
+    width: 600px;
+  }
+
+  .footer__map-wrapper iframe {
+    width: 600px;
+  }
+}
+
+@media (max-width: 690px) {
+  .footer__map-wrapper {
+    width: 351px;
+  }
+
+  .footer__map-wrapper iframe {
+    width: 351px;
+  }
+}

@@ -1,0 +1,326 @@
+header {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  width: 808px;
+  height: 76px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  background-color: $grey-color;
+  padding: 0 16px;
+}
+
+@media (max-width: 880px) {
+  header {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 62px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 880px) {
+  .nav {
+    // height: 100%;
+  }
+}
+
+// logo
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 101;
+  width: 158px;
+  height: 52px;
+}
+
+.logo__name {
+  color: $black-color;
+  font-size: 24px;
+  text-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+@media (max-width: 880px) {
+  .logo {
+    margin-left: 16px;
+  }
+  .logo__name {
+    display: none;
+  }
+}
+
+// menu
+.menu {
+  display: flex;
+  gap: 22px;
+  height: 100%;
+  transition: $transition-variable;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile__button {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .menu {
+    display: none;
+  }
+  .menu.active {
+    z-index: 1;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    background-color: $grey-color;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+  .nav__mobile {
+    position: fixed;
+    z-index: 101;
+    display: flex;
+    gap: 16px;
+    right: 16px;
+  }
+
+  .mobile__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $purple-color;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $purple-color-hover;
+    }
+  }
+}
+
+.menu__item {
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &:hover {
+    color: $purple-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 1px;
+      width: 100%;
+      height: 1px;
+      background-color: $purple-color;
+    }
+  }
+
+  &:active {
+    color: $purple-color;
+  }
+}
+
+.menu__item p {
+  color: $black-color;
+}
+
+.menu__item > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 880px) {
+  .menu__item {
+    height: 30px;
+    width: calc(100% - 32px);
+    transition: $transition-variable;
+  }
+
+  .menu__item:hover {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 16px;
+      width: calc(100% - 32px);
+      height: 1px;
+      background-color: $purple-color;
+    }
+  }
+
+  .menu__item:hover p {
+    color: $purple-color;
+  }
+}
+
+// call
+.button__inner {
+  cursor: pointer;
+  width: 188px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: $purple-color;
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $purple-color-hover;
+  }
+}
+
+@media (max-width: 880px) {
+  .button {
+    display: none;
+  }
+
+  .button.active {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .button__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -370px;
+    z-index: 1000000;
+  }
+
+  .button__inner {
+    width: 70%;
+  }
+}
+
+.button__text {
+  font-size: 14px;
+  color: $white-color;
+}
+
+// mobile menu
+.mobile__img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $purple-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transition-variable;
+  cursor: pointer;
+}
+
+.mobile__img:hover {
+  background-color: $purple-color-hover;
+}
+
+// burger
+.burger {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid $grey-dark-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.line {
+  position: relative;
+}
+
+.line,
+.line:before,
+.line:after {
+  width: 15px;
+  height: 2px;
+  background-color: $black-color;
+  transition: all ease 0.3s;
+}
+
+.line:before,
+.line:after {
+  content: '';
+  position: absolute;
+}
+
+.line:before {
+  top: -6px;
+  left: 0;
+}
+
+.line:after {
+  top: 6px;
+  left: 0;
+}
+
+.line.active {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.line.active:before {
+  display: none;
+}
+
+.line.active:after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+// mobile contacts
+.mobile__contacts {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .mobile__contacts.active {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: $purple-light-color;
+    border-radius: 8px;
+    width: calc(100% - 64px);
+    padding: 16px;
+    margin-top: 72px;
+    height: 200px;
+
+    & > p:nth-child(3) {
+      font-family: 'Ubuntu-Regular', sans-serif;
+    }
+  }
+}

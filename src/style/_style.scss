@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: $white-color;
+}
+
+.overfow {
+  display: none;
+}
+
+.overflow.active {
+  position: fixed;
+  z-index: 98;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: $modal-bg;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 100px;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.header {
+  font-size: 56px;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .header {
+    font-size: 40px;
+  }
+}
+
+// bootstrap common classes
+.container-fluid {
+  margin: 96px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body {
+  background-color: $grey-light-color;
+  margin: 24px 16px;
+}
+
+.card-text {
+  // card description
+  font-family: 'Ubuntu-Regular', sans-serif;
+  font-size: 16px;
+}

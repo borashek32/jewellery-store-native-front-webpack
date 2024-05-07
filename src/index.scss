@@ -1,0 +1,15 @@
+@import 'libs/normalize.css';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/grid';
+
+@import 'style/reset';
+@import 'style/fonts';
+@import 'style/_variables';
+@import 'style/_style';
+@import 'style/_header';
+@import 'style/_swiper';
+@import 'style/_advantages';
+@import 'style/_catalog';
+@import 'style/_modal.scss';
+@import 'style/_footer';

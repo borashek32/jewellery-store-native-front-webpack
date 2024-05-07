@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivid Gems</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header">
+        <nav class="header__nav nav">
+          <a href="#promo">
+            <div class="nav__logo logo">
+              <img src="./img/logo.svg" alt="logo" class="logo__img" />
+              <p class="logo__name">Vivid Gems</p>
+            </div>
+          </a>
+
+          <ul class="nav__menu menu">
+            <li class="menu__item">
+              <a href="#advantages">
+                <p class="menu__item_name">Преимущества</p>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#catalog">
+                <p class="menu__item_name">Каталог</p>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#contacts">
+                <p class="menu__item_name">Контакты</p>
+              </a>
+            </li>
+            <li class="mobile__contacts">
+              <p>info@vvidgems.com</p>
+              <p>+7 (999) 999-99-99m</p>
+              <p>Rm 7b, One Capital Place, 18 Luard Rd, Wan Chai, Hong Kong</p>
+            </li>
+          </ul>
+
+          <div class="nav__button button">
+            <div class="button__wrapper">
+              <button class="button__inner">
+                <img
+                  src="./img/icons/phone.svg"
+                  alt="phone"
+                  class="button__icon"
+                />
+                <span class="button__text">Заказать звонок</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="nav__mobile mobile">
+            <div class="mobile__button">
+              <img
+                src="./img/icons/phone.svg"
+                alt="phone"
+                class="button__icon"
+              />
+            </div>
+            <div class="mobile__burger burger">
+              <span class="burger__line line"></span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="overflow">
+        <div class="modal">
+          <div class="modal__close"></div>
+          <div class="modal__sent">
+            <div class="modal__img-wrapper">
+              <img src="./img/modal/stroke.svg" alt="modal sent" />
+            </div>
+            <div class="modal__header">Ваша заявка отправлена!</div>
+            <div class="modal__desc">Мы свяжемся с вами в ближайшее время.</div>
+          </div>
+          <div class="modal__data">
+            <h3 class="modal__header">Заказать изделие</h3>
+            <p class="modal__desc">
+              Оставьте заявку сейчас и мы свяжемся с вами в ближайшее время.
+            </p>
+            <form class="modal__form form" action="#">
+              <div class="form__input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  class="form__input"
+                  placeholder="Имя"
+                  id="name"
+                />
+                <p class="form__error" id="name-error">
+                  Имя не может быть пустым
+                </p>
+              </div>
+              <div class="form__input-wrapper">
+                <input
+                  type="text"
+                  name="phone"
+                  class="form__input"
+                  placeholder="Телефон"
+                  id="phone"
+                />
+                <p class="form__error" id="phone-error">
+                  Телефон не может быть пустым
+                </p>
+                <p
+                  class="form__error"
+                  id="phone-mask-error"
+                >
+                  Неправильный формат телефона
+                </p>
+              </div>
+              <button type="submit" class="form__button">
+                Заказать изделие
+              </button>
+            </form>
+          </div>
+          <div class="modal__img">
+            <img src="./img/modal/modal-img.png" alt="order" />
+          </div>
+        </div>
+
+        <div class="cardModal">
+          <div class="cardModal__close"></div>
+          <div class="cardModal__product product">
+            <div class="product__images">
+              <div class="product__img">
+                <img src="./img/modal/modal-img.png" alt="order" />
+              </div>
+              <div class="product__img-slider"></div>
+            </div>
+            <div class="product__data">
+              <p class="product__header">Кольцо из золота с бриллиантами</p>
+              <p class="product__old-price">89 990 ₽</p>
+              <p class="product__price">
+                7 990 ₽
+                <span>-60%</span>
+              </p>
+              <p class="product__desc_name">Описание</p>
+              <p class="product__desc_value">
+                Серьги «БРИЛЛИАНТЫ ЯКУТИИ» с 2 бриллиантами, 0.45 карат, огранка
+                круг 57 граней, цвет 3, чистота 6, тип огранки А; Белое золото
+                585 пробы.
+              </p>
+              <div class="product__details details">
+                <div class="details__detail detail">
+                  <p class="detail__name">Бренд:</p>
+                  <p class="detail__value">Соколов</p>
+                </div>
+                <div class="details__detail detail">
+                  <p class="detail__name">Коллекция:</p>
+                  <p class="detail__value">Весна</p>
+                </div>
+                <div class="details__detail detail">
+                  <p class="detail__name">Модель:</p>
+                  <p class="detail__value">73066-C5W-01</p>
+                </div>
+                <div class="details__detail detail">
+                  <p class="detail__name">Материал изделия:</p>
+                  <p class="detail__value">Белое золото</p>
+                </div>
+                <div class="details__detail detail">
+                  <p class="detail__name">Вставка:</p>
+                  <p class="detail__value">Бриллиант</p>
+                </div>
+                <div class="details__detail detail">
+                  <p class="detail__name">Страна:</p>
+                  <p class="detail__value">Россия</p>
+                </div>
+                <div class="details__detail detail">
+                  <p class="detail__name">Вес изделия:</p>
+                  <p class="detail__value">1.45 г</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <section id="promo" class="promo">
+          <div class="swiper swiper-promo" id="swiper-promo">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-promo-slide swiper-slide-one">
+                <div
+                  class="swiper-lazy-preloader swiper-lazy-preloader-white"
+                ></div>
+              </div>
+              <div class="swiper-slide swiper-promo-slide swiper-slide-two">
+                <div
+                  class="swiper-lazy-preloader swiper-lazy-preloader-white"
+                ></div>
+              </div>
+              <div class="swiper-slide swiper-promo-slide swiper-slide-three">
+                <div
+                  class="swiper-lazy-preloader swiper-lazy-preloader-white"
+                ></div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+        <section id="advantages" class="advantages">
+          <div class="container-fluid mx-auto">
+            <h2 class="advantages__header header">Преимущества</h2>
+            <div class="advantages__grid" id="advantages-grid">
+              <div class="advantages__item item">
+                <h4 class="item__header">Корзина</h4>
+                <h4 class="item__subheader">Удобные покупки</h4>
+                <p class="item__description">
+                  1 Делайте покупки, не выходя из дома или в дороге, всего за
+                  несколько кликов. Нет необходимости посещать физические
+                  магазины в ограниченное время.
+                </p>
+                <div class="item__img">
+                  <div class="item__img-wrapper">
+                    <img src="./img/icons/cart.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="advantages__item item_square item">
+                <h4 class="item__header">320</h4>
+                <h4 class="item__subheader">Мастеров</h4>
+                <p class="item__description">
+                  2 Делайте покупки, не выходя из дома или в дороге, всего за
+                  несколько кликов. Нет необходимости посещать физические
+                  магазины в ограниченное время.
+                </p>
+                <div class="item__img">
+                  <div class="item__img-wrapper">
+                    <img src="./img/icons/ppl.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="advantages__item item">
+                <h4 class="item__header">4 512+</h4>
+                <h4 class="item__subheader">Видов товаров</h4>
+                <p class="item__description">
+                  3 Делайте покупки, не выходя из дома или в дороге, всего за
+                  несколько кликов. Нет необходимости посещать физические
+                  магазины в ограниченное время.
+                </p>
+                <div class="item__img">
+                  <div class="item__img-wrapper">
+                    <img src="./img/icons/diamond.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="advantages__item item" id="returnGoods">
+                <h4 class="item__header">14 дней</h4>
+                <h4 class="item__subheader">на возврат товара</h4>
+                <p class="item__description">
+                  4 Делайте покупки, не выходя из дома или в дороге, всего за
+                  несколько кликов. Нет необходимости посещать физические
+                  магазины в ограниченное время.
+                </p>
+                <div class="item__img">
+                  <div class="item__img-wrapper">
+                    <img src="./img/icons/time.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="advantages__item item">
+                <h4 class="item__header">24 часа</h4>
+                <h4 class="item__subheader">Среднее время доставки</h4>
+                <p class="item__description">
+                  5 Делайте покупки, не выходя из дома или в дороге, всего за
+                  несколько кликов. Нет необходимости посещать физические
+                  магазины в ограниченное время.
+                </p>
+                <div class="item__img">
+                  <div class="item__img-wrapper">
+                    <img src="./img/icons/map.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="advantages__item item">
+                <h4 class="item__header">8 172+</h4>
+                <h4 class="item__subheader">Довольных клиентов</h4>
+                <p class="item__description">
+                  6 Делайте покупки, не выходя из дома или в дороге, всего за
+                  несколько кликов. Нет необходимости посещать физические
+                  магазины в ограниченное время.
+                </p>
+                <div class="item__img">
+                  <div class="item__img-wrapper">
+                    <img src="./img/icons/heart.svg" alt="icon" />
+                  </div>
+                </div>
+              </div>
+              <div class="" id="advantages-video">
+                <video
+                  src="./video/video.webm"
+                  autoplay="autoplay"
+                  loop="loop"
+                  controls
+                ></video>
+              </div>
+              <div class="advantages__item item item_purple">
+                <h4 class="">Оставить заявку</h4>
+                <div class="item__img">
+                  <img src="./img/icons/arrow.svg" alt="icon" class="arrow" />
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <!-- <div class="advantages-sm">
+              <div class="advantages-video">
+                <video
+                  src="./video/video.webm"
+                  autoplay="autoplay"
+                  loop="loop"
+                  controls
+                ></video>
+              </div>
+              <div class="swiper swiper-adv" id="swiper-adv">
+                <div class="swiper-wrapper swiper-adv__wrapper">
+                  <div class="swiper-slide swiper-adv__slide">
+                    <div class="advantages__item item">
+                      <h4 class="item__header">Корзина</h4>
+                      <h4 class="item__subheader">Удобные покупки</h4>
+                      <p class="item__description">
+                        1 Делайте покупки, не выходя из дома или в дороге, всего за
+                        несколько кликов. Нет необходимости посещать физические
+                        магазины в ограниченное время.
+                      </p>
+                      <div class="item__img">
+                        <div class="item__img-wrapper">
+                          <img src="./img/icons/cart.svg" alt="icon" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-adv__slide">
+                    <div class="advantages__item item_square item">
+                      <h4 class="item__header">320</h4>
+                      <h4 class="item__subheader">Мастеров</h4>
+                      <p class="item__description">
+                        2 Делайте покупки, не выходя из дома или в дороге, всего за
+                        несколько кликов. Нет необходимости посещать физические
+                        магазины в ограниченное время.
+                      </p>
+                      <div class="item__img">
+                        <div class="item__img-wrapper">
+                          <img src="./img/icons/ppl.svg" alt="icon" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-adv__slide">
+                    <div class="advantages__item item">
+                      <h4 class="item__header">4 512+</h4>
+                      <h4 class="item__subheader">Видов товаров</h4>
+                      <p class="item__description">
+                        3 Делайте покупки, не выходя из дома или в дороге, всего за
+                        несколько кликов. Нет необходимости посещать физические
+                        магазины в ограниченное время.
+                      </p>
+                      <div class="item__img">
+                        <div class="item__img-wrapper">
+                          <img src="./img/icons/diamond.svg" alt="icon" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-adv__slide">
+                    <div class="advantages__item item" id="returnGoods">
+                      <h4 class="item__header">14 дней</h4>
+                      <h4 class="item__subheader">на возврат товара</h4>
+                      <p class="item__description">
+                        4 Делайте покупки, не выходя из дома или в дороге, всего за
+                        несколько кликов. Нет необходимости посещать физические
+                        магазины в ограниченное время.
+                      </p>
+                      <div class="item__img">
+                        <div class="item__img-wrapper">
+                          <img src="./img/icons/time.svg" alt="icon" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-adv__slide">
+                    <div class="advantages__item item">
+                      <h4 class="item__header">24 часа</h4>
+                      <h4 class="item__subheader">Среднее время доставки</h4>
+                      <p class="item__description">
+                        5 Делайте покупки, не выходя из дома или в дороге, всего за
+                        несколько кликов. Нет необходимости посещать физические
+                        магазины в ограниченное время.
+                      </p>
+                      <div class="item__img">
+                        <div class="item__img-wrapper">
+                          <img src="./img/icons/map.svg" alt="icon" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-adv__slide">
+                    <div class="advantages__item item">
+                      <h4 class="item__header">8 172+</h4>
+                      <h4 class="item__subheader">Довольных клиентов</h4>
+                      <p class="item__description">
+                        6 Делайте покупки, не выходя из дома или в дороге, всего за
+                        несколько кликов. Нет необходимости посещать физические
+                        магазины в ограниченное время.
+                      </p>
+                      <div class="item__img">
+                        <div class="item__img-wrapper">
+                          <img src="./img/icons/heart.svg" alt="icon" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages__item item item_purple">
+                <h4 class="">Оставить заявку</h4>
+                <div class="item__img">
+                  <img src="./img/icons/arrow.svg" alt="icon" class="arrow" />
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </section>
+        <section id="catalog" class="catalog">
+          <!-- <div class="container-fluid"> -->
+            <h2 class="catalog__header header text-center">Каталог</h2>
+            <p class="catalog__desc text-center">
+              Откройте для себя нашу обширную коллекцию ювелирных изделий,
+              предлагающую широкий выбор стилей и дизайнов на любой вкус и
+              случай.
+            </p>
+            <div class="container-fluid justify-content-center">
+              <div class="row justify-content-center">
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                    <div class="card__img-container">
+                      <img
+                        src="./img/catalog/card-img1.png"
+                        class="card-img-top"
+                        alt="catalog img"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="card__old-price">89 990 P</div>
+                      <div class="card__price">
+                        7 990 ₽
+                        <span>-60%</span>
+                      </div>
+                      <p class="card-text">Кольцо из золота с бриллиантами</p>
+                      <div class="card__details">Подробнее</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img2.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      5 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img3.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      73 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img4.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      8 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div> 
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img5.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      6 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img6.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      76 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                    <div class="card__img-container">
+                      <img
+                        src="./img/catalog/card-img1.png"
+                        class="card-img-top"
+                        alt="catalog img"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="card__old-price">89 990 P</div>
+                      <div class="card__price">
+                        7 990 ₽
+                        <span>-60%</span>
+                      </div>
+                      <p class="card-text">Кольцо из золота с бриллиантами</p>
+                      <div class="card__details">Подробнее</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img2.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      5 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img3.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      73 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img4.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      8 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div> 
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img5.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      6 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img6.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      76 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                    <div class="card__img-container">
+                      <img
+                        src="./img/catalog/card-img1.png"
+                        class="card-img-top"
+                        alt="catalog img"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="card__old-price">89 990 P</div>
+                      <div class="card__price">
+                        7 990 ₽
+                        <span>-60%</span>
+                      </div>
+                      <p class="card-text">Кольцо из золота с бриллиантами</p>
+                      <div class="card__details">Подробнее</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img2.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      5 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img3.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      73 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img4.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      8 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div> 
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img5.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      6 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img6.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      76 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                    <div class="card__img-container">
+                      <img
+                        src="./img/catalog/card-img1.png"
+                        class="card-img-top"
+                        alt="catalog img"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="card__old-price">89 990 P</div>
+                      <div class="card__price">
+                        7 990 ₽
+                        <span>-60%</span>
+                      </div>
+                      <p class="card-text">Кольцо из золота с бриллиантами</p>
+                      <div class="card__details">Подробнее</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img2.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      5 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img3.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      73 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img4.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      8 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div> 
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img5.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      6 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
+                  <div class="card">
+                  <div class="card__img-container">
+                    <img
+                      src="./img/catalog/card-img6.png"
+                      class="card-img-top"
+                      alt="catalog img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="card__old-price">89 990 P</div>
+                    <div class="card__price">
+                      76 990 ₽
+                      <span>-60%</span>
+                    </div>
+                    <p class="card-text">Кольцо из золота с бриллиантами</p>
+                    <div class="card__details">Подробнее</div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </section>
+      </main>
+
+      <footer id="contacts" class="footer">
+        <div class="footer__main">
+          <div class="footer__contacts contacts">
+            <h3 class="contacts__header">Контакты</h3>
+            <div class="contacts__data">
+              <div>
+                <div class="contacts__img-wrapper">
+                  <img
+                    src="./img/icons/email.svg"
+                    alt="email"
+                    class="contacts__img"
+                  />
+                </div>
+              </div>
+              <div class="contacts__desc">
+                <p class="contacts__name">Email:</p>
+                <a href="mailto:info@vvidgems.com">
+                  <p class="contacts__value">info@vvidgems.com</p>
+                </a>
+              </div>
+            </div>
+            <div class="contacts__data">
+              <div>
+                <div class="contacts__img-wrapper">
+                  <img
+                    src="./img/icons/phone-purple.svg"
+                    alt="phone"
+                    class="contacts__img"
+                  />
+                </div>
+              </div>
+              <div class="contacts__desc">
+                <p class="contacts__name">Phone:</p>
+                <a href="tel:79999999999">
+                  <p class="contacts__value">+7 (999) 999-99-99</p>
+                </a>
+              </div>
+            </div>
+            <div class="contacts__data">
+              <div>
+                <div class="contacts__img-wrapper">
+                  <img
+                    src="./img/icons/home.svg"
+                    alt="address"
+                    class="contacts__img"
+                  />
+                </div>
+              </div>
+              <div class="contacts__desc">
+                <p class="contacts__name">Address:</p>
+                <p class="contacts__value">
+                  Rm 7b, One Capital Place, 18 Luard Rd, Wan Chai, Hong Kong
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__map">
+            <div class="footer__map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10084.86942094847!2d114.16850809764439!3d22.27834739434839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404005c5d1ee6b3%3A0x2cc7c7a0c5d45535!2sOne%20Capital%20Place!5e0!3m2!1sru!2sru!4v1713611510086!5m2!1sru!2sru"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <p>©2023 Quantumit.ltd</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+.promo {
+  max-width: 1920px;
+}
+
+// slider promo
+.swiper-promo {
+  margin: 0 auto;
+  width: 100vw;
+  height: 1081px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 840px) {
+  .swiper-promo {
+    height: 800px;
+  }
+}
+
+@media (max-width: 400px) {
+  .swiper-promo {
+    height: 462px;
+  }
+}
+
+.swiper-promo-slide {
+  background: $grey-light-color;
+  background-position: center;
+  background-size: cover;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide-one {
+  background-image: url('img/slider-promo/promo1.png');
+}
+
+.swiper-slide-two {
+  background-image: url('img/slider-promo/promo2.png');
+}
+
+.swiper-slide-three {
+  background-image: url('img/slider-promo/promo3.png');
+}
+
+@media (max-width: 840px) {
+  .swiper-slide-one {
+    background-image: url('img/slider-promo/promo1-mobile.png');
+  }
+
+  .swiper-slide-two {
+    background-image: url('img/slider-promo/promo2-mobile.png');
+  }
+
+  .swiper-slide-three {
+    background-image: url('img/slider-promo/promo3-mobile.png');
+  }
+}
+
+.swiper-promo-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// arrows
+.swiper-button-prev,
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
+  background-color: $grey-light-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: $transition-variable;
+}
+
+@media (max-width: 1300px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: $grey-color;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  margin-left: 326px;
+}
+
+.swiper-button-next {
+  position: absolute;
+  margin-right: 326px;
+}
+
+@media (max-width: 1780px) {
+  .swiper-button-prev {
+    margin-left: 100px;
+  }
+
+  .swiper-button-next {
+    margin-right: 100px;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  color: $black-color;
+  cursor: pointer;
+}
+
+.swiper-button-prev::after {
+  transform: rotate(-135deg);
+}
+
+.swiper-button-next::after {
+  transform: rotate(45deg);
+}
+
+// pagination
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  opacity: 1;
+  background: $grey-light-color;
+  transition: $transition-variable;
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: $grey-color;
+}
+
+.swiper-pagination-bullet-active {
+  width: 14px;
+  height: 14px;
+  background: $purple-color;
+}
+
+
+
+
+
+.swiper-adv {
+  margin: 0 auto;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
