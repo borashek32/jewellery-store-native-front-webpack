@@ -151,6 +151,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--black-color);
+  transition: var(--transition-variable);
+
+  &:hover {
+    color: var(--purple-color);
+  }
 }
 
 @media (max-width: 880px) {
@@ -323,11 +329,3 @@ header {
   }
 }
 
-.menu__item_name {
-  color: var(--black-color);
-  transition: var(--transition-variable);
-
-  &:hover {
-    color: var(--purple-color);
-  }
-}
