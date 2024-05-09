@@ -24,17 +24,11 @@
 }
 
 .modal.active {
-  width: 856px;
-  height: 428px;
+  width: 428px;
+  height: 420px;
   display: flex;
   background-color: $white-color;
   border-radius: 8px;
-}
-
-@media (max-width: 880px) {
-  .modal.active {
-    width: 428px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -72,7 +66,7 @@
 
 @media (max-width: 600px) {
   .modal__header {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 
@@ -84,6 +78,7 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .modal__header {
@@ -141,12 +136,12 @@
 .form__button {
   margin-top: 8px;
   background-color: $purple-light-color;
-  width: 380px;
   height: 58px;
   border: none;
   border-radius: 4px;
   color: $white-color;
   cursor: pointer;
+  width: 100%;
 }
 
 .form__button.active {
@@ -155,6 +150,8 @@
 
 .modal__img img {
   width: 428px;
+  height: 100%;
+  transform: scale(2);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -172,8 +169,8 @@
 
 .cardModal.active {
   position: relative;
-  width: 856px;
-  height: 428px;
+  width: 428px;
+  height: 380px;
   display: flex;
   border-radius: 8px;
 }
@@ -181,6 +178,7 @@
 @media (max-width: 475px) {
   .cardModal.active {
     width: 350px;
+    height: 420px;
   }
 }
 
@@ -212,27 +210,16 @@
   transform: rotate(90deg);
 }
 
+.product__img img {
+  width: 428px;
+  height: 100%;
+}
+
 .product {
   display: flex;
   background-color: $white-color;
   border-radius: 8px;
-}
-
-@media (max-width: 880px) {
-  .product {
-    width: 428px;
-    flex-direction: column;
-  }
-
-  .cardModal.active {
-    flex-direction: column;
-  }
-
-  .product__img img {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 8px;
-  }
+  width: 428px;
 }
 
 @media (max-width: 475px) {

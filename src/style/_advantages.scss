@@ -33,6 +33,10 @@
   width: 100%;
 }
 
+.item__desc {
+  width: 240px;
+}
+
 .item {
   border-radius: 8px;
   background-color: $grey-color;
@@ -42,7 +46,7 @@
   flex-direction: column;
   cursor: pointer;
   height: 248px;
-  width: 420px;
+  width: 100%;
   margin: 0 20px;
   transition: $transition-variable;
 

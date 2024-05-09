@@ -20,7 +20,7 @@ body {
   background-color: $modal-bg;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   padding-top: 100px;
 }
 
@@ -50,7 +50,7 @@ body {
 
 // bootstrap common classes
 .container-fluid {
-  margin: 96px auto;
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
