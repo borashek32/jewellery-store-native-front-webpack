@@ -54,4 +54,3 @@ closeButton.addEventListener('click', function () {
   burgerLine.classList.remove('active')
   mobileContacts.classList.remove('active')
 })
-

@@ -14,13 +14,13 @@ module.exports = {
   devtool,
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: '[name].[contenthash].js',
     clean: true,
   },
   devtool: 'inline-source-map',
   devServer: {
-    static: './dist',
+    static: './build',
     open: true,
     hot: true,
   },

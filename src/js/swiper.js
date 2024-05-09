@@ -17,12 +17,14 @@ const swiperPromo = new Swiper('#swiper-promo', {
   },
   on: {
     slideChange: function () {
-      const preloader = this.slides[this.activeIndex].querySelector('.swiper-lazy-preloader');
-      preloader.style.display = 'flex';
+      const preloader = this.slides[this.activeIndex].querySelector(
+        '.swiper-lazy-preloader'
+      )
+      preloader.style.display = 'flex'
 
       setTimeout(() => {
-        preloader.style.display = 'none';
-      }, 500);
+        preloader.style.display = 'none'
+      }, 500)
     },
   },
 })
